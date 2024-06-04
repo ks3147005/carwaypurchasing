@@ -1,0 +1,65 @@
+.deals__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin: 2rem auto;
+}
+
+.deals-heading {
+    text-align: center;
+}
+
+.deals-title {
+    font-family: 'Outfit';
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 150%;
+    color:#4B82ED;
+}
+
+.deals-title2 {
+    margin-left: 0.7rem;
+    font-family: 'Outfit';
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 150%;
+    color: #4c4c4c;   
+}
+
+.deals__item {
+    background: #f2f2f2;
+    padding: 1.3rem;
+    border: 2px solid #f2f2f2;
+    border-radius: 12px;
+}
+
+.deals__item-image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.deals__item h3 {
+    margin: 1rem 0 1rem;
+}
+
+.deals__item-cta {
+    display: flex;
+    gap: 1rem;
+}
+
+        /* Media Queries */
+
+ @media screen and (max-width: 1024px) {
+    .deals__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.7rem;
+    }                  
+}
+        
+@media screen and (max-width: 650px) {
+    .deals__container {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }  
+    
+}

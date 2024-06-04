@@ -1,0 +1,118 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 4rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #4B82ED;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-links {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-links-container {
+   display: flex;
+   flex-direction: row;
+   padding: 0 1rem;
+}
+
+.navbar-heading {
+    font-family: 'Outfit';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 150%;
+    color: #fff;
+}
+
+.navbar-logo img {
+    width: 150px;
+}
+
+.navbar-links-container a,
+.navbar-menu-container a{
+    font-family: 'Outfit';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 50px;
+    color: #fff; 
+    margin: 0 1.5rem;
+}
+
+.navbar-contact button,
+.navbar-menu-container button{  
+    font-family: 'Outfit';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    color: #4378FF;
+    width: 182px;
+    height: 62px;
+    background: #fff;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-menu {
+    display: none;
+    margin-left: 1rem;
+    position: relative;
+}
+
+.navbar-menu svg {
+    cursor: pointer;
+}
+
+.navbar-menu-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    position: absolute;
+    background:  rgb(11, 17, 22);
+    padding: 2rem;
+    right: 0;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);;
+}
+
+.navbar-menu-container p {
+    margin: 1rem 0;
+}
+
+@media screen and (max-width:1050px) {
+    .navbar-links-container {
+        display: none;
+    }
+
+    .navbar-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .navbar-contact {
+        display: none;
+    }
+
+    .navbar-menu-contact {
+        display: none;
+    }
+
+    .navbar-menu-container {
+        top: 20px;
+        display: flex;
+    }
+}

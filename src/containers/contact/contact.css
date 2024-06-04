@@ -1,0 +1,92 @@
+.container.contact__container {
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+    margin: auto;
+}
+
+.contact__options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact h1{
+    font-family: 'Outfit';
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 50px;
+    color:#4B82ED;
+}
+
+#contact h2{
+    font-family: 'Outfit';
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+    color:#4c4c4c;
+}
+
+.contact__option {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    align-items: center;
+    border: 2px solid var(--color-primary-variant);
+}
+
+.contact__option h4, h5 {
+    margin-top: 5px;
+    display: inline-block;
+    color: #000;
+}
+
+.contact__option img {
+    width: 50px;
+}
+
+.contact__option-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.contact__option a {
+    margin-top: 0.7rem;
+    display: inline-block;
+    color: #000;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+     gap: 1.2rem;
+}
+
+input {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-primary-variant);
+    resize: none;
+}
+
+@media screen and (max-width: 1024px) {
+.container.contact__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+           
+   }
+
+   @media screen and (max-width: 650px) {
+    .container.contact__container {
+       width: var(--container-width-sm);
+    }
+}

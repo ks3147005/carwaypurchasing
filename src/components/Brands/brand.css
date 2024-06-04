@@ -1,0 +1,60 @@
+.brands {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4fbff;
+}
+
+.brands-heading {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.brands-title {
+    font-family: 'Outfit';
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 150%;
+    color:#4B82ED;
+}
+
+.brands-title2 {
+    margin-left: 0.7rem;
+    font-family: 'Outfit';
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 150%;
+    color: #4c4c4c;   
+}
+
+.brand-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 8px;
+}
+
+.brand-img {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+.brand {
+    display: flex;
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.brand-img img {
+    width: 100px;
+}
+ .brand-hector {
+    display: flex;
+    background: #fff;
+    /* margin: 20px; */
+    padding: 0px 20px ;
+ }

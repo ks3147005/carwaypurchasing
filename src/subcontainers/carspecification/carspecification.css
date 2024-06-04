@@ -1,0 +1,10 @@
+.car-img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.car-img img{
+    max-width: 500px;
+}
